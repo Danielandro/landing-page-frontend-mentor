@@ -13,4 +13,90 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; /* smoother rendering of fonts */
+  --primary: rgb(255,116,110);
+  --mid: rgba(136,136,136);
+  --dark: rgb(17,17,17);
+  
+}
+nav {
+  /* position: relative; */
+  padding-top: 30px;
+  font-family: 'Open Sans', sans-serif;  
+  text-transform: uppercase;
+  
+}
+
+nav > * {
+  display: inline-block;
+}
+/* nav p {
+  float: left;
+  margin-right: 30px;
+} */
+
+ul {
+  text-align: center;
+  margin-left: 50%;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block; 
+  margin: 0 20px;   
+  font-size: 15px;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: var(--mid);  
+}
+
+button {
+  float: right;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px 30px;
+}
+
+#logo{
+  float: left;
+  margin-left: 20px;
+  color: var(--dark);
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  
+}
+
+/* section {
+  
+}
+
+figure {
+  
+} */
+
+#night-img {
+  /* background-image: url("/images/nighttime.jpg"); */
+  
+ text-align: center;
+ /* position: absolute; */
+ border: 2px solid black;    
+}
+
+img {
+    height: 700px;
+    width: 700px;
+      border-radius: 50%;
+}
+
+#night-img:after{
+      border: 5px solid yellow;
+}
+#scroll {
+  position: relative;
+  bottom: 20px;
+  transform: rotate(-90deg);
 }
