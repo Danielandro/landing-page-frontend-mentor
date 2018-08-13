@@ -133,6 +133,27 @@ h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
+section p {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif; 
+  color: var(--mid);
+  line-height: 1.7em;
+}
+
+section h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--dark);
+}
+
+section h3::after {
+  color: var(--dark);
+  height: 1px;
+  width: 5px;
+}
+
 /**FOOTER**/
 #scroll {
   position: relative;
