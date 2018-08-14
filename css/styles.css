@@ -4,6 +4,7 @@
 
 html {
   box-sizing: border-box; /* use IE box model */
+  /* position: relative; */
 }
 
 *, *:before, *:after {
@@ -12,7 +13,7 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; /* smoother rendering of fonts */
+  -moz-osx-font-smoothing: grayscale; /* smoother rendering of fonts */ 
   --primary: 255,116,110;
   --mid: rgba(136,136,136);
   --dark: rgb(17,17,17);
@@ -146,17 +147,46 @@ section h3 {
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
   color: var(--dark);
+  position: relative;
+  width: auto;
 }
 
 section h3::after {
-  color: var(--dark);
-  height: 1px;
-  width: 5px;
+  content: "";
+  background-color: var(--dark);
+  height: 4px;
+  width: 25px;
+  position: absolute;
+  left: 150px;
+  bottom: 5px;
 }
 
 /**FOOTER**/
+#scroll-div {
+  position: absolute;
+  top: 100%;
+  left: 40px;
+  bottom: 5px;
+}
+
 #scroll {
-  position: relative;
-  bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  position: relative; 
+  bottom: 30px;
+  top: 10px;
   transform: rotate(-90deg);
+  text-transform: uppercase;
+}
+
+#scroll::before {
+  content: "";
+  background-color: var(--dark);
+  height: 4px;
+  width: 25px;
+  position: absolute;
+  bottom: 0;
+  /* left: 20px; */
+  right: 80px;
+  top: 50%;
 }
