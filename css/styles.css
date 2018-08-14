@@ -17,7 +17,8 @@ body {
   --primary: 255,116,110;
   --mid: rgba(136,136,136);
   --dark: rgb(17,17,17);
-  
+  height: 100vh;
+  position: relative;
 }
 
 /***NAVBAR***/
@@ -61,6 +62,7 @@ button {
   background-color: white;
   border-radius: 15px;
   padding: 5px 30px;
+  border: 1px solid var(--mid);
 }
 
 #logo{
@@ -75,10 +77,10 @@ button {
 
 /****IMAGE SECTION****/
 figure {
-  width: 600px;
+  width: 900px;
   position: absolute;
   /* background-color:  rgb(49, 189, 147); */
-  height: 600px;
+  height: 900px;
   /* float: right; */
   top: 30%;
   right: 10%;
@@ -127,11 +129,13 @@ figure {
 section {
   position: absolute;
   top: 40%;
+  left: 80px;
 }
 
 h2 {
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px;
 }
 
 section p {
@@ -149,6 +153,7 @@ section h3 {
   color: var(--dark);
   position: relative;
   width: auto;
+  margin-top: 50px;  
 }
 
 section h3::after {
